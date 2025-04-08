@@ -1,0 +1,178 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Optional: Light background */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow */
+    overflow: hidden; /* Ensure rounded corners are respected */
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 100%; /* Make sure image doesn't overflow */
+    height: auto;
+    display: block;
+}
+
+.right-side {
+    flex: 1;
+    padding: 40px;
+}
+
+.right-side h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.right-side .tagline {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.form-group.remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group.remember-forgot .remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.remember-forgot a {
+    margin-left: auto;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important: Include padding and border in the element's total width and height */
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+
+
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+.sign-in-button {
+    background-color: rgba(0, 0, 238, 0.73);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+    background-color: rgb(0, 0, 238);
+}
+
+.or-login-with {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.or-login-with hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.or-login-with span {
+    padding: 0 10px;
+    color: #888;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-login button {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-login button:hover {
+    background-color: #f5f5f5;
+}
+
+.google-button {
+    color: #4285F4; /* Google blue */
+}
+
+.github-button {
+    color: #333; /* Dark grey */
+}
+
+/* Basic responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .left-side {
+        padding: 20px;
+    }
+
+    .right-side {
+        padding: 20px;
+    }
+}
