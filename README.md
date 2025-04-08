@@ -31,7 +31,7 @@ A Java-based web application built using **Spring Boot MVC** with **JSP frontend
 ```bash
 git clone https://github.com/mukteswarAI/employee-management
 cd employee-management
-
+```
 ### 2. Set Up PostgreSQL Database
 
 - Create a PostgreSQL database named `ems_db`.
@@ -44,7 +44,7 @@ spring.datasource.password=your_password
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
+```
 ### 3. Build and Run the App
 
 Run the following command in the terminal:
